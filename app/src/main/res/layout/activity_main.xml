@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
     <ListView
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:id="@+id/android_list"
         android:entries="@array/contacts"
         />
