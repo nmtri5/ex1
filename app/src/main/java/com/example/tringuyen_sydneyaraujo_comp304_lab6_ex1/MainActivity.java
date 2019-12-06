@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 String item = (String) lstView.getItemAtPosition(position);
                 // Show Alert
                 intent.putExtra("contactName", item);
+                intent.putExtra("phoneList", phoneList);
+                intent.putExtra("id", position);
                 startActivity(intent);
             }
         });

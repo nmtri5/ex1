@@ -62,6 +62,8 @@ public class MessageActivity extends AppCompatActivity {
         ArrayList phoneList = new ArrayList();
         if(extras != null)
             contactName = extras.getString("contactName");
+        phoneList = extras.getParcelableArrayList("phoneList");
+        int a  = extras.getInt("id");
         textMessage = (TextView) findViewById(R.id.textMessage);
 
         textMessage.setMovementMethod(ScrollingMovementMethod.getInstance());
@@ -73,6 +75,7 @@ public class MessageActivity extends AppCompatActivity {
         //
         eText = (EditText) findViewById(R.id.editText);
         txtPhone = (EditText) findViewById(R.id.txtPhone);
+        txtPhone.setText(phoneList.get(a-1).toString());
 
         //
         //an action to take in the future with same permission
