@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='TriNguyen_SydneyAraujo_COMP304_Lab6_ex1'
